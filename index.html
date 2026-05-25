@@ -1089,10 +1089,19 @@
             gap: 2rem;
         }
 
-        .skill-category {
+        /* .skill-category {
             background: linear-gradient(135deg, rgba(26, 31, 46, 0.6), rgba(35, 41, 56, 0.4));
             backdrop-filter: blur(10px);
             border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        } */
+        .skill-category {
+            background: #ffffff;
+            border: none;
             border-radius: 16px;
             padding: 2rem;
             transition: var(--transition);
@@ -1117,11 +1126,17 @@
             transform: scaleX(1);
         }
 
-        .skill-category:hover {
+        /* .skill-category:hover {
             background: linear-gradient(135deg, rgba(26, 31, 46, 0.9), rgba(35, 41, 56, 0.7));
             border-color: transparent;
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        } */
+        .skill-category:hover {
+            background: #ffffff;
+            border-color: transparent;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .skill-category:nth-child(odd):hover {
@@ -1132,13 +1147,16 @@
             box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
         }
 
-        .skill-category-title {
+        /* .skill-category-title {
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             color: var(--color-text);
             position: relative;
             padding-left: 1rem;
+        } */
+        .skill-category-title {
+            color: #111827;
         }
 
         .skill-category-title::before {
@@ -1160,6 +1178,15 @@
         .skill-category:nth-child(6) .skill-category-title::before { background: var(--color-secondary); }
         .skill-category:nth-child(7) .skill-category-title::before { background: var(--color-tertiary); }
         .skill-category:nth-child(8) .skill-category-title::before { background: var(--color-warning); }
+        .skill-category:nth-child(1) .skill-tag { background: #3b82f6; color: #fff; }
+.skill-category:nth-child(2) .skill-tag { background: #168c65; color: #fff; }
+.skill-category:nth-child(3) .skill-tag { background: #562eb3; color: #fff; }
+.skill-category:nth-child(4) .skill-tag { background: #ba8221; color: #fff; }
+.skill-category:nth-child(5) .skill-tag { background: #27a3b9; color: #fff; }
+.skill-category:nth-child(6) .skill-tag { background: #96b131; color: #fff; }
+.skill-category:nth-child(7) .skill-tag { background: #b03572; color: #fff; }
+.skill-category:nth-child(8) .skill-tag { background: #a349b7; color: #fff; }
+
 
         .skill-tags {
             display: flex;
@@ -1167,13 +1194,25 @@
             gap: 0.75rem;
         }
 
-        .skill-tag {
+        /* .skill-tag {
             padding: 0.6rem 1.1rem;
             background: rgba(59, 130, 246, 0.05);
             border: 1px solid var(--color-border);
             border-radius: 6px;
             font-size: 0.9rem;
             color: var(--color-text-muted);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        } */
+        .skill-tag {
+            padding: 0.45rem 0.9rem;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            color: #374151;
+            font-weight: 500;
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -1194,10 +1233,16 @@
             left: 100%;
         }
 
-        .skill-tag:hover {
+        /* .skill-tag:hover {
             background: rgba(59, 130, 246, 0.15);
             border-color: var(--color-accent);
             color: var(--color-accent-bright);
+            transform: translateY(-2px);
+        } */
+        .skill-tag:hover {
+            background: #e0e7ff;
+            border-color: #a5b4fc;
+            color: #3730a3;
             transform: translateY(-2px);
         }
 
