@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Savata - Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<html lang="en" prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/video# ya: http://webmaster.yandex.ru/vocabularies/"><head>
     <style>
         :root {
             --color-bg: #0a0e1a;
@@ -49,6 +41,20 @@
         }
 
         /* Animated Background */
+        /* body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+            animation: gradientShift 15s ease infinite;
+            z-index: -1;
+        } */
         body::before {
             content: '';
             position: fixed;
@@ -204,7 +210,7 @@
             overflow: hidden;
         }
 
-        .hero::before {
+        /* .hero::before {
             content: '';
             position: absolute;
             top: 0;
@@ -213,13 +219,17 @@
             height: 100%;
             background: linear-gradient(135deg, transparent 0%, rgba(59, 130, 246, 0.05) 100%);
             z-index: 0;
-        }
+        } */
 
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
             z-index: 1;
+            background: linear-gradient(135deg, #1a1f2e, #232938);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid var(--color-border);
         }
 
         .hero-subtitle {
@@ -247,7 +257,7 @@
         .hero-description {
             font-size: 1.25rem;
             color: var(--color-text-muted);
-            max-width: 700px;
+            max-width: 1200px;
             margin-bottom: 2.5rem;
             line-height: 1.7;
             opacity: 0;
@@ -388,6 +398,10 @@
             margin-bottom: 1.5rem;
             color: var(--color-text-muted);
             font-size: 1.05rem;
+            background: linear-gradient(135deg, #1a1f2e, #232938);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--color-border);
         }
 
         .about-stats {
@@ -405,6 +419,9 @@
             transition: var(--transition);
             position: relative;
             overflow: hidden;
+            background: #ECEAF7;
+            background: linear-gradient(135deg, #1a1f2e, #232938) !important;
+            border: 1px solid var(--color-border) !important;
         }
 
         .stat-card::before {
@@ -1313,6 +1330,62 @@
             font-size: 0.9rem;
         }
 
+            .experience-item {
+            /* background: #f3f4f6; */
+            background: rgba(255, 255, 255, 0.85);
+            border: none;
+            border-radius: 16px;
+            padding: 2rem;
+            padding-left: 2rem;
+            margin-left: 2rem;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: var(--transition);
+        }
+
+        .experience-item:hover {
+            background: #E8F1FB;
+            border-color: transparent;
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .experience-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .experience-role {
+            color: #111827;
+        }
+
+        .experience-company {
+            color: #3b82f6;
+        }
+
+        .experience-meta {
+            color: #6b7280;
+        }
+
+        .experience-highlights li {
+            color: #374151;
+        }
+
+        .experience-highlights li::before {
+            color: #3b82f6;
+        }
+
+        nav {
+            z-index: 1000; /* already set, keep it */
+        }
+
+        .hero, section, footer {
+            position: relative;
+            z-index: 1;
+            background: #171b27
+        }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -1347,6 +1420,7 @@
                 background-position: 100% 50%;
             }
         }
+        
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -1413,8 +1487,71 @@
             }
         }
     </style>
-</head>
-<body>
+    <meta charset="utf-8">
+    <meta name="description" content="Biggest videos collection of high quality. Our entertainment portal finds the best video for you every day!">
+    <meta name="keywords" content="portal, hd, free, tube, videos, search">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <meta name="theme-color" content="#212121">
+    <style>html{-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a,body{color:#f1f1f1}body{background:#111;font-family:Roboto,Arial,sans-serif;font-size:14px;min-width:320px;position:relative}body,button,form,h1,input,textarea{margin:0;padding:0}.footer a:hover,a{-webkit-text-decoration:none;text-decoration:none}.autoComplete_wrapper>ul,.header{left:0;right:0}.header{background:#111;overflow:visible;position:fixed;top:0;z-index:17}.logo a{color:#fff;display:block;text-transform:uppercase}.logo a:first-letter{color:red!important;font-weight:700}.s_menu{background:#242424;border-radius:10px;box-shadow:0 16px 24px 2px #00000024,0 6px 30px 5px #0000001f,0 8px 10px -5px #0006;display:none;padding:5px 0;position:absolute;right:0;top:45px}.s_opened{overflow-y:hidden}.s_opened .search,.sm_opened .s_menu{display:block!important}.sm_item{display:block;padding:5px 15px}.sm_item span,.sm_opened .settings{color:red}.m_thumbs span[data-i18n]{color:inherit}.more_thumbs .icon-th-large{display:initial}.more_thumbs .icon-th{display:none}.m_thumbs span:not([data-i18n]):before{content:"more"}.more_thumbs .m_thumbs span:not([data-i18n]):before{content:"less"}html[lang=ru] .m_thumbs span:not([data-i18n]):before{content:"больше"}html[lang=ru] .more_thumbs .m_thumbs span:not([data-i18n]):before{content:"меньше"}.h_btn{font-size:20px;line-height:45px;padding:0 11px}.search{box-sizing:border-box;display:none;max-width:600px;position:absolute;width:100%;z-index:1}.s_form{margin:0;position:relative}.s_btn,.s_text{color:inherit;font-size:16px;outline:0}.s_text{background:#111;border:1px solid #303030;border-radius:17px;box-shadow:none;box-sizing:border-box;line-height:16px;padding:6px 13% 6px 12px;width:100%}.s_text::-webkit-search-cancel-button{-webkit-appearance:none;background:#0000 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath stroke='%23fff' stroke-width='2' d='m1 1 10 10M11 1 1 11'/%3E%3C/svg%3E") 50% no-repeat;border:none;cursor:pointer;height:12px;width:12px}.lazyload,.lazyloading{opacity:0}.lazyloaded{opacity:1;transition:opacity .2s}.s_btn{background-color:#242424;border:0;border-radius:0 17px 17px 0;cursor:pointer;height:100%;min-width:40px;position:absolute;right:0;top:0;width:12%}.s_btn:hover{color:#fff}.menu{display:flex;overflow:hidden}.search_btn{font-size:18px}.container{margin:0 auto;max-width:1750px;padding:0 15px;position:relative}.main{padding-top:45px}.c_title{font-size:16px;font-weight:700;padding:20px 2px}.autoComplete_wrapper>ul>li,.autoComplete_wrapper>ul>p{font-size:14px;overflow:hidden;padding:8px 12px;text-align:left;text-overflow:ellipsis;white-space:nowrap}.autoComplete_wrapper>ul>li:hover{cursor:pointer}.autoComplete_wrapper>ul{background-color:#242424;border-radius:12px;box-shadow:0 0 3px 0 #242424;margin:3px 0 0;max-height:226px;outline:0;overflow-y:auto;padding:3px 0;position:absolute;top:100%;z-index:1000}.autoComplete_wrapper>ul>p{font-size:18px!important;margin-bottom:0;margin-top:0}.autoComplete_wrapper>ul>li mark,.autoComplete_wrapper>ul>p mark{background-color:initial;color:#fff;font-weight:700}.autoComplete_wrapper>ul>li:hover,.autoComplete_wrapper>ul>li[aria-selected=true]{background-color:#34343480}.sm_item span{font-weight:700}.footer{color:#888;line-height:20px;padding:20px 0;text-align:center}.f_menu{margin-bottom:5px}.footer a{color:inherit;-webkit-text-decoration:underline;text-decoration:underline}.footer .icon-heart,.love a{color:#de2600;font-weight:700;-webkit-text-decoration:none;text-decoration:none;text-transform:uppercase}.navbar{align-items:center;display:flex;flex-direction:row;height:45px;justify-content:space-between;position:relative}.s_layout{background:#0006;bottom:0;cursor:pointer;display:block;left:0;position:absolute;right:0;top:45px;z-index:16}.icon-th-large{display:none}.sm_item .icon{fill:red!important}.icon{fill:currentColor;height:1em;position:relative;top:.125em;width:1em}.c_title .icon{fill:red!important}@media (min-width:568px){.search_btn{display:none!important}.search{display:block;padding:0 25px;position:static}}.lang-switcher{align-items:center;display:flex;gap:2px;padding:0 6px}.lang-btn{background:none;border:none;border-radius:3px;color:#ffffff80;cursor:pointer;font-family:inherit;font-size:12px;line-height:42px;padding:4px 6px;transition:color .15s}.lang-btn:hover{color:#fff}.lang-btn.active{color:red;font-weight:700}.lang-select{-webkit-appearance:none;appearance:none;background-color:#111111d9;border:1px solid #ffffff2e;border-radius:10px;color:#ffffffd9;cursor:pointer;font:inherit;font-size:12px;line-height:1;outline:none;padding:6px 22px 6px 10px}.lang-select:hover{border-color:#ffffff4d;color:#fff}.lang-select:focus{border-color:#ff0000a6;box-shadow:0 0 0 2px #ff000026}.lang-select{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='rgba(255,255,255,0.7)' d='m7 10 5 5 5-5z'/%3E%3C/svg%3E");background-position:right 8px center;background-repeat:no-repeat}.main,body,html{height:100%}.main{align-items:center;display:flex;justify-content:center;min-height:300px;padding:0;position:relative}._search{max-width:800px;opacity:.9;width:80%;z-index:3}._search .s_btn,._search .s_text{font-size:18px;line-height:18px}._search .s_text{border-radius:22px;border-width:3px;padding:8px 13% 8px 15px}._search .s_btn{border-radius:0 22px 22px 0;border-width:3px;min-width:50px}._search .autoComplete_wrapper>ul>li,._search .autoComplete_wrapper>ul>p{font-size:16px;padding:8px 18px}.footer{bottom:0;margin-bottom:15px;padding:0;position:absolute;z-index:2}canvas{display:block;vertical-align:bottom}#particles-js{background-position:50% 50%;background-repeat:no-repeat;background-size:cover;height:100%;position:absolute;top:0;width:100%}
+
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: all;
+    }
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Savata - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    <!-- <div class="main">
+        
+    
+        
+        </div>	<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="968" height="1762"></canvas></div>
+    </div> -->
+    <script async="" src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"></script><script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>particlesJS("particles-js",{particles:{number:{value:100,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:.5,random:!1,anim:{enable:!1,speed:1,opacity_min:.1,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:40,size_min:.1,sync:!1}},line_linked:{enable:!0,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:6,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"grab"},onclick:{enable:!0,mode:"push"},resize:!0},modes:{grab:{distance:140,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:3},repulse:{distance:200,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!0});</script>
+    <script async="" src="/static/js/main.min.599a35438743.js"></script>
+    <script>
+    (function(){
+        var COOKIE='ui_lang', MAX_AGE=365*24*60*60;
+        function setCookie(lang){
+            var exp=new Date(Date.now()+MAX_AGE*1000).toUTCString();
+            document.cookie=COOKIE+'='+lang+'; path=/; expires='+exp+'; SameSite=Lax';
+        }
+        document.addEventListener('click',function(e){
+            var btn=e.target.closest('.lang-btn');
+            if(!btn) return;
+            e.preventDefault();
+            var lang=btn.dataset.lang;
+            if(!lang) return;
+            fetch('/api/set-language',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'lang='+encodeURIComponent(lang)}).catch(function(){});
+            setCookie(lang);
+            window.location.reload();
+        });
+    })();
+    </script>
+        
+    <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(95004659, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/95004659" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script async="" src="//www.googletagmanager.com/gtag/js?id=G-Z51Z1JX21F"></script>
+    
+    <body>
+        <div id="particles-js"></div>
     <!-- Scroll Progress -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -1471,13 +1608,16 @@
         </div>
         <div class="about-grid">
             <div class="about-text">
-                <p>
-                    Software engineer with 4+ years of experience building production systems across full-stack development, machine learning, and cloud infrastructure. Currently leading development at Community Dreams Foundation and contributing to data-driven impact measurement at Harlem Children's Zone.
+                <p style="margin:0;">
+                    <span style="margin-right:10px; color:#8aa37a; font-weight:bold;">|</span>
+                    Software engineer with 4+ years of experience building production systems across full-stack development, machine learning, and cloud infrastructure. Currently contributing to data-driven impact measurement at Harlem Children's Zone.
                 </p>
-                <p>
+                <p style="margin:0;">
+                    <span style="margin-right:10px; color:#8aa37a; font-weight:bold;">|</span>
                     Previously at HP Inc, I developed critical firmware features for enterprise printers, optimized update mechanisms, and built diagnostic tools that improved system reliability. I specialize in creating scalable applications, implementing ML models in production, and optimizing performance across the stack.
                 </p>
-                <p>
+                <p style="margin:0;">
+                    <span style="margin-right:10px; color:#8aa37a; font-weight:bold;">|</span>
                     Strong foundation in computer science fundamentals with hands-on experience in Python, Java, C++, React, cloud platforms, and modern DevOps practices.
                 </p>
             </div>
@@ -1487,11 +1627,11 @@
                     <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">20+</div>
+                    <div class="stat-number">10+</div>
                     <div class="stat-label">Projects Delivered</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">3</div>
+                    <div class="stat-number">1</div>
                     <div class="stat-label">Active Roles</div>
                 </div>
                 <div class="stat-card">
@@ -1509,7 +1649,7 @@
             <h2 class="section-title">Experience</h2>
         </div>
         <div class="experience-timeline">
-            <div class="experience-item">
+            <!-- <div class="experience-item">
                 <div class="experience-header">
                     <div class="company-logo">
                         <img src="images/cdreamslogo.jpeg" alt="Community Dreams Foundation" onerror="this.parentElement.innerHTML='<div style=\'color: var(--color-accent); font-size: 1.5rem; font-weight: 700;\'>CDF</div>'">
@@ -1528,7 +1668,7 @@
                     <li>Collaborated with cross-functional teams in Agile sprints, contributing to 20% increase in user engagement and accelerating feature rollout by one week per cycle</li>
                     <li>Refactored legacy codebase, resolving 50+ issues, improving application stability by 35%, and achieving 90%+ unit test coverage through modular design</li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="experience-item">
                 <div class="experience-header">
@@ -2330,5 +2470,9 @@
         // Initialize particles
         createParticles();
     </script>
-</body>
-</html>
+        <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+        particlesJS("particles-js",{particles:{number:{value:100,density:{enable:!0,value_area:800}},color:{value:"#ffffff"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:.5,random:!1,anim:{enable:!1,speed:1,opacity_min:.1,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:40,size_min:.1,sync:!1}},line_linked:{enable:!0,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:6,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"grab"},onclick:{enable:!0,mode:"push"},resize:!0},modes:{grab:{distance:140,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:3},repulse:{distance:200,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!0});
+        </script>
+    </body>
+    </html>
